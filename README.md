@@ -2,6 +2,9 @@
 
 In this project we use slam(gmapping) to collect training dataset(image & robot pose), then using the convolutional neural network(Posenet & Mapnet) to regress the robot pose only by RGB image. (Without depth map)
 
+![image](https://github.com/m5823779/PoseEstimation/blob/master/demo/result.png)
+![image](https://github.com/m5823779/PoseEstimation/blob/master/demo/success.gif)
+
 ## Installation Dependencies:
 
 Python2.7
