@@ -102,4 +102,3 @@ $rosbag play -d 3 rosbag
 ## Reference:
 
 https://github.com/NVlabs/geomapnet
-# PoseEstimation
