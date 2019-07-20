@@ -2,9 +2,6 @@
 
 In this project we use slam(gmapping) to collect training dataset(image & robot pose), then using the convolutional neural network(Posenet & Mapnet) to regress the robot pose only by RGB image. (Without depth map)
 
-![image](https://github.com/m5823779/PoseEstimation/blob/master/demo/result.png)
-![image](https://github.com/m5823779/PoseEstimation/blob/master/demo/success.gif)
-
 ## Installation Dependencies:
 
 Python2.7
@@ -81,6 +78,9 @@ Mapnet:
 python eval.py --dataset dataset_name --scene scene_name --model mapnet --weights logs/dataset_name_scene_name_mapnet_step3_skip10/epoch_300.pth.tar --config_file configs/step3_skip10.ini --val
 ```
 
+
+![image](https://github.com/m5823779/PoseEstimation/blob/master/demo/result.png)
+
 Real Time on turtlebot3:
 
 ```
@@ -88,6 +88,10 @@ roscore
 python -m visdom.server
 python pose_estimator.py --dataset dataset_name --scene scene_name --model mapnet --weights logs/dataset_name_scene_name_mapnet_step3_skip10/epoch_300.pth.tar --config_file configs/step3_skip10.ini --plot
 ```
+
+
+![image](https://github.com/m5823779/PoseEstimation/blob/master/demo/success.gif)
+Demo video (Speed up 5 times )
 
 Or run rosbag
 
