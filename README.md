@@ -90,7 +90,7 @@ python pose_estimator.py --dataset dataset_name --scene scene_name --model mapne
 ```
 
 
-![image](https://github.com/m5823779/PoseEstimation/blob/master/demo/success.gif)
+![image](https://github.com/m5823779/PoseEstimation/blob/master/demo/final_demo.gif)
 Demo video (Speed up 5 times )
 
 Or run rosbag
