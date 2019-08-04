@@ -78,6 +78,9 @@ Mapnet:
 python eval.py --dataset dataset_name --scene scene_name --model mapnet --weights logs/dataset_name_scene_name_mapnet_step3_skip10/epoch_300.pth.tar --config_file configs/step3_skip10.ini --val
 ```
 
+
+![image](https://github.com/m5823779/PoseEstimation/blob/master/demo/result.png)
+
 Real Time on turtlebot3:
 
 ```
@@ -85,6 +88,10 @@ roscore
 python -m visdom.server
 python pose_estimator.py --dataset dataset_name --scene scene_name --model mapnet --weights logs/dataset_name_scene_name_mapnet_step3_skip10/epoch_300.pth.tar --config_file configs/step3_skip10.ini --plot
 ```
+
+
+![image](https://github.com/m5823779/PoseEstimation/blob/master/demo/success.gif)
+Demo video (Speed up 5 times )
 
 Or run rosbag
 
@@ -95,4 +102,3 @@ $rosbag play -d 3 rosbag
 ## Reference:
 
 https://github.com/NVlabs/geomapnet
-# PoseEstimation

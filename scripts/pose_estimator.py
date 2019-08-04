@@ -167,7 +167,7 @@ class Poses:
 
         self.bridge = CvBridge()
         self.pose_estimator = PoseEstimator(args)
-        rospy.Subscriber("/usb_cam/image_raw", Image, self.callback)
+        rospy.Subscriber("/usb_cam/image_raw", Image, self.callback, buff_size=640*480*30, queue_size=1)
         rospy.spin()
 
     def callback(self, img):
